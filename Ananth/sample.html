@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matias - Creative Visual Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+    .hero-bg {
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+    }
+    .highlight-bar {
+      background-color: #c6ff00;
+      color: #000;
+    }
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center py-6 px-10 bg-black">
+    <div class="flex items-center space-x-2">
+      <div class="bg-lime-400 text-black font-bold text-2xl w-8 h-8 flex items-center justify-center rounded-full">M</div>
+      <h1 class="text-xl font-semibold">Matias</h1>
+    </div>
+
+    <nav class="hidden md:flex space-x-8 text-gray-300 uppercase text-sm">
+      <a href="#" class="text-lime-400 font-medium">Home</a>
+      <a href="#" class="hover:text-lime-400">About</a>
+      <a href="#" class="hover:text-lime-400">Works</a>
+      <a href="#" class="hover:text-lime-400">Services</a>
+      <a href="#" class="hover:text-lime-400">Testimonial</a>
+      <a href="#" class="hover:text-lime-400">Blog</a>
+      <a href="#" class="hover:text-lime-400">Contact</a>
+    </nav>
+
+    <div class="flex items-center space-x-4">
+      <button class="bg-lime-400 text-black font-semibold px-4 py-2 rounded-lg hover:bg-lime-300">Let's Talk →</button>
+      <button class="md:hidden flex flex-col justify-between w-6 h-5">
+        <span class="block w-full h-0.5 bg-white"></span>
+        <span class="block w-full h-0.5 bg-white"></span>
+        <span class="block w-full h-0.5 bg-white"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg flex flex-col md:flex-row items-center justify-between px-10 py-20 relative overflow-hidden">
+    <div class="max-w-lg">
+      <p class="text-gray-400 uppercase text-sm mb-2">Currently available for freelance worldwide ↗</p>
+      <h2 class="text-5xl font-extrabold leading-tight mb-6">Creative Visual <br> Designer</h2>
+
+      <div class="flex items-center space-x-3 mt-6">
+        <button class="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center hover:border-lime-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-5.197-3.023A1 1 0 008 9.025v5.95a1 1 0 001.555.832l5.197-3.023a1 1 0 000-1.664z" />
+          </svg>
+        </button>
+        <span class="uppercase text-gray-300 text-sm">Work Process</span>
+      </div>
+    </div>
+
+    <!-- Hero Image Placeholder -->
+    <div class="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+      <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=500&q=80" alt="Designer Portrait" class="rounded-xl shadow-lg max-h-[400px] object-cover" />
+    </div>
+
+    <!-- Follow Me Sidebar -->
+    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 items-center">
+      <span class="text-gray-400 text-xs tracking-widest rotate-90">FOLLOW ME</span>
+      <a href="#" class="social-icon text-lime-400"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon text-lime-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon text-lime-400"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-icon text-lime-400"><i class="fab fa-behance"></i></a>
+      <a href="#" class="social-icon text-lime-400"><i class="fab fa-dribbble"></i></a>
+    </div>
+  </section>
+
+  <!-- Services Highlight Bar -->
+  <div class="highlight-bar flex flex-wrap justify-center text-center py-4 text-sm font-semibold space-x-6">
+    <span>✳ Website Design & Logo</span>
+    <span>✳ Business Branding</span>
+    <span>✳ Mobile Application Design</span>
+    <span>✳ UI/UX Mobile Design</span>
+  </div>
+
+  <!-- About Section -->
+  <section class="py-16 px-10 text-center bg-black">
+    <h3 class="text-2xl font-semibold mb-4">I'm David Matias, a Brand & Webflow Designer</h3>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      Currently residing in London, I create modern, clean, and visually appealing design solutions
+      for global clients. My focus is on transforming ideas into impactful digital experiences.
+    </p>
+  </section>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

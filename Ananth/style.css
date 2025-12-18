@@ -1,0 +1,256 @@
+
+/* ===== CSS segment ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c6ff00;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c6ff00;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #c6ff00;
+  cursor: pointer;
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #c6ff00;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+#talkBtn {
+  padding: 0.8rem 1.5rem;
+  background: #c6ff00;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#talkBtn:hover {
+  transform: scale(1.05);
+  background: #d4ff33;
+}
+
+#talkBtn:hover, .contact-email:hover {
+  box-shadow: 0 0 12px #c6ff00;
+}
+
+.hero-img img {
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* ===== Portfolio ===== */
+.portfolio {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #c6ff00;
+}
+
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(198, 255, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem;
+  color: #fff;
+}
+
+/* ===== About ===== */
+.about {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #151515;
+}
+
+.about h2 {
+  color: #c6ff00;
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.logo {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { color: #c6ff00; }
+  50% { color: #d4ff33; }
+}
+
+/* ===== Contact ===== */
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #c6ff00;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.8rem 1.5rem;
+  background: #c6ff00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.contact-email:hover {
+  background: #d4ff33;
+}
+
+.contact-img {
+  max-width: 100%;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #111;
+  text-align: center;
+  padding: 1.5rem;
+  color: #ccc;
+}
+
+.footer-logo {
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .nav-links a {
+    margin: 0.8rem 0;
+    color: #fff;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 2rem;
+  }
+}
